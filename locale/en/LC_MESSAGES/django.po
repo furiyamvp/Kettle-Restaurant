@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-26 13:58+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\pages\models.py:9
+msgid "name"
+msgstr ""
+
+#: .\pages\models.py:10 .\pages\models.py:24 .\pages\models.py:44
+#: .\pages\models.py:75
+msgid "photo"
+msgstr ""
+
+#: .\pages\models.py:11
+msgid "ingredient"
+msgstr ""
+
+#: .\pages\models.py:17
+msgid "gallery"
+msgstr ""
+
+#: .\pages\models.py:18
+msgid "galleries"
+msgstr ""
+
+#: .\pages\models.py:25 .\pages\models.py:76
+msgid "title"
+msgstr ""
+
+#: .\pages\models.py:26 .\pages\models.py:45 .\pages\models.py:78
+msgid "description"
+msgstr ""
+
+#: .\pages\models.py:28 .\pages\models.py:47 .\pages\models.py:83
+msgid "created_at"
+msgstr ""
+
+#: .\pages\models.py:29 .\pages\models.py:48 .\pages\models.py:84
+msgid "updated_at"
+msgstr ""
+
+#: .\pages\models.py:35
+msgid "new"
+msgstr ""
+
+#: .\pages\models.py:36
+msgid "news"
+msgstr ""
+
+#: .\pages\models.py:43
+msgid "full_name"
+msgstr ""
+
+#: .\pages\models.py:54
+msgid "worker"
+msgstr ""
+
+#: .\pages\models.py:55
+msgid "workers"
+msgstr ""
+
+#: .\pages\models.py:69
+msgid "category"
+msgstr ""
+
+#: .\pages\models.py:70
+msgid "categories"
+msgstr ""
+
+#: .\pages\models.py:77
+msgid "price"
+msgstr ""
+
+#: .\pages\models.py:79
+msgid "in_stock"
+msgstr ""
+
+#: .\pages\models.py:90
+msgid "product"
+msgstr ""
+
+#: .\pages\models.py:91
+msgid "products"
+msgstr ""
+
+#: .\templates\about-us.html:53
+msgid "Our Staffs"
+msgstr ""
+
+#: .\templates\blog.html:14 .\templates\index.html:327
+msgid "Latest news"
+msgstr ""
+
+#: .\templates\blog.html:15 .\templates\index.html:328
+msgid "Kettle BLOG"
+msgstr ""
+
+#: .\templates\index.html:14
+msgid "Why do something you don’t like?"
+msgstr ""
+
+#: .\templates\index.html:15
+msgid "WE ALSO DON’T KNOW!"
+msgstr ""
+
+#: .\templates\index.html:18
+msgid ""
+"\n"
+"                                    <li>FOUR PEOPLE</li>\n"
+"                                    <li>FOUR CITIES</li>\n"
+"                                    <li>FOUR STYLES</li>\n"
+"                                    <li>FOUR IDEAS</li>\n"
+"                                    "
+msgstr ""
+
+#: .\templates\index.html:109
+msgid "Special Menu"
+msgstr ""
+
+#: .\templates\index.html:110
+msgid "CHECK OUT OUR MENU"
+msgstr ""
+
+#: .\templates\index.html:159
+msgid "Restaurant Gallery"
+msgstr ""
+
+#: .\templates\index.html:160
+msgid "- What we make -"
+msgstr ""
+
+#: .\templates\layouts\footer.html:64
+msgid "Quick Link"
+msgstr ""
+
+#: .\templates\layouts\footer.html:66 .\templates\layouts\header.html:17
+msgid "Home"
+msgstr ""
+
+#: .\templates\layouts\footer.html:67 .\templates\layouts\header.html:19
+msgid "About"
+msgstr ""
+
+#: .\templates\layouts\footer.html:68 .\templates\layouts\header.html:21
+msgid "Blog"
+msgstr ""
+
+#: .\templates\layouts\footer.html:74
+msgid "Photostream"
+msgstr ""
+
+#: .\templates\layouts\footer.html:87
+msgid "Our Editorial"
+msgstr ""
+
+#: .\templates\layouts\service.html:12
+msgid ""
+"\n"
+"                    <div class=\"service-text\">\n"
+"                        <h3>We cook with passion</h3>\n"
+"                        <p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut\n"
+"                            labore et dolore </p>\n"
+"                    </div>\n"
+"                    "
+msgstr ""
+
+#: .\templates\layouts\service.html:26
+msgid ""
+"\n"
+"                    <div class=\"service-text\">\n"
+"                        <h3>Book a table online</h3>\n"
+"                        <p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut\n"
+"                            labore et dolore </p>\n"
+"                    </div>\n"
+"                    "
+msgstr ""
+
+#: .\templates\layouts\service.html:40
+msgid ""
+"\n"
+"                    <div class=\"service-text\">\n"
+"                        <h3>Free and fast delivery</h3>\n"
+"                        <p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut\n"
+"                            labore et dolore </p>\n"
+"                    </div>\n"
+"                    "
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\widgets.py:24
+msgid "None"
+msgstr ""

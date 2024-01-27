@@ -1,0 +1,95 @@
+{% load static %}
+{% load i18n %}
+<header>
+    <div id="sticky-header" class="header-top-area header-2 pr-60 pl-60">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="logo">
+                        <a href="{% url 'pages:home' %}"><img src="{% static 'img/logo/logo.png' %}" alt=""/></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-8">
+                    <div class="main-menu text-center">
+                        <nav id="mobile-menu">
+                            <ul>
+                                <li class="{% if request.path == '/' %}active{% endif %}"><a
+                                        href="{% url 'pages:home' %}">{% trans 'Home'%}</a></li>
+                                <li class="{% if request.path == '/about/' %}active{% endif %}"><a
+                                        href="{% url 'pages:about' %}">{% trans 'About'%}</a></li>
+                                <li class="{% if request.path == '/blog/' %}active{% endif %}"><a
+                                        href="{% url 'pages:blog' %}">{% trans 'Blog'%}</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mobile-menu"></div>
+                </div>
+                <div class="col-xl-3 col-lg-2">
+                    <div class="header-right f-right d-none d-md-none d-lg-block">
+                        <ul>
+                            <li><a href="#" data-toggle="modal" data-target="#search-modal"><span
+                                    class="ti-search"></span></a>
+                            </li>
+                            <li class="info-bar"><a href="javascript:void(0)"><span class="ti-align-right"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="extra-info">
+        <div class="close-icon">
+            <button>
+                <i class="far fa-window-close"></i>
+            </button>
+        </div>
+        <div class="logo-side mb-30">
+            <a href="">
+                <img src="{% static 'img/logo/logo.png' %}" alt=""/>
+            </a>
+        </div>
+        <div class="side-menu mb-30">
+            <ul>
+                <li><a href="{% url 'pages:home' %}">Home</a></li>
+                <li><a href="{% url 'pages:about' %}">About</a></li>
+                <li><a href="{% url 'pages:blog' %}">Blog</a></li>
+            </ul>
+        </div>
+        <div class="instagram">
+            <a href="#">
+                <img src="{% static 'img/instagram/1.jpg' %}" alt="">
+            </a>
+            <a href="#">
+                <img src="{% static 'img/instagram/2.jpg' %}" alt="">
+            </a>
+            <a href="#">
+                <img src="{% static 'img/instagram/3.jpg' %}" alt="">
+            </a>
+            <a href="#">
+                <img src="{% static 'img/instagram/4.jpg' %}" alt="">
+            </a>
+            <a href="#">
+                <img src="{% static 'img/instagram/5.jpg' %}" alt="">
+            </a>
+            <a href="#">
+                <img src="{% static 'img/instagram/6.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="social-icon-right mt-20">
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</header>

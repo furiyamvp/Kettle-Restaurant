@@ -1,0 +1,115 @@
+{% load static %}
+{% load i18n %}
+<div class="brand-area yellow-bg pt-75 pb-75">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="brand-active owl-carousel">
+                <div class="col-xl-12">
+                    <div class="brand-wrapper">
+                        <div class="brand-img">
+                            <img src="{% static 'img/brand/1.png' %}" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="brand-wrapper">
+                        <div class="brand-img">
+                            <img src="{% static 'img/brand/2.png' %}" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="brand-wrapper">
+                        <div class="brand-img">
+                            <img src="{% static 'img/brand/3.png' %}" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="brand-wrapper">
+                        <div class="brand-img">
+                            <img src="{% static 'img/brand/4.png' %}" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- brand-area-end -->
+<!-- footer-area-start -->
+<footer>
+    <div class="footer-top-area footer2 pt-90 pb-80 black2-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="footer-wrapper mb-30">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="{% static 'img/logo/logo.png' %}" alt=""/></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet, enim nec
+                                venenatis </p>
+                        </div>
+                        <div class="footer-icon">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="footer-wrapper mb-30">
+                        <h3 class="footer-title">{% trans 'Quick Link' %}</h3>
+                        <ul class="footer-menu">
+                            <li class="active"><a href="{% url 'pages:home' %}">{% trans 'Home' %}</a></li>
+                            <li><a href="{% url 'pages:about' %}">{% trans 'About' %}</a></li>
+                            <li><a href="{% url 'pages:blog' %}">{% trans 'Blog' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="footer-wrapper mb-30">
+                        <h3 class="footer-title">{% trans 'Photostream' %}</h3>
+                        <ul class="footer-img">
+                            <li><a href="{% url 'pages:home' %}"><img alt="" src="{% static 'img/instagram/1.jpg' %}"></a></li>
+                            <li><a href="{% url 'pages:home' %}"><img alt="" src="{% static 'img/instagram/2.jpg' %}"></a></li>
+                            <li><a href="{% url 'pages:home' %}"><img alt="" src="{% static 'img/instagram/3.jpg' %}"></a></li>
+                            <li><a href="{% url 'pages:home' %}"><img alt="" src="{% static 'img/instagram/4.jpg' %}"></a></li>
+                            <li><a href="{% url 'pages:home' %}"><img alt="" src="{% static 'img/instagram/5.jpg' %}"></a></li>
+                            <li><a href="{% url 'pages:home' %}"><img alt="" src="{% static 'img/instagram/6.jpg' %}"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="footer-wrapper mb-30">
+                        <h3 class="footer-title">{% trans 'Our Editorial' %}</h3>
+                        <div class="footer-info">
+                            <p>In laoreet, enima nec venenatis luctus, lectus dolor accumsan magna.</p>
+                        </div>
+                        <ul class="footer-link">
+                            <li><i class="fas fa-home"></i>Bramley Rd, London W10 6SZ</li>
+                            <li><i class="fas fa-phone"></i>+44 1234 358 759</li>
+                            <li><i class="far fa-envelope"></i>contact@kettle.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer-area-end -->
+<!-- Modal Search -->
+<div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form>
+                <input type="text" placeholder="Search here...">
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+{% include 'layouts/service.html' %}
+<!-- counter-area-start -->
+<div class="counter-area pt-130 pb-105" style="background-image:url(img/bg/bg1.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="counter-wrapper mb-30 text-center">
+                    <div class="counter-text">
+                        <h1 class="counter">10</h1>
+                        <span>YEARS OF <br> EXPERIENCE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="counter-wrapper mb-30 text-center">
+                    <div class="counter-text">
+                        <h1 class="counter">120</h1>
+                        <span>Successful <br> entrepreneurs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="counter-wrapper mb-30 text-center">
+                    <div class="counter-text">
+                        <h1 class="counter">80</h1>
+                        <span>COMPANIES <br> FOUNDED</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="counter-wrapper mb-30 text-center">
+                    <div class="counter-text">
+                        <h1 class="counter">240</h1>
+                        <span>BOOKS, DVDS <br> & PODCASTS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- counter-area-end -->
+<!-- our-staffs-area-start -->
+<div class="our-staffs-area pt-90 pb-65">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 col-lg-10 offset-lg-1 offset-xl-1">
+                <div class="staffs-title text-center mb-65">
+                    <h1>{% trans 'Our Staffs' %}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for worker in workers %}
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="our-staffs-wrapper text-center mb-30">
+                    <div class="our-staffs-img">
+                        <img src="{{ worker.photo.url }}" alt=""/>
+                    </div>
+                    <div class="our-staffs-text">
+                        <h4>{{ worker.full_name }}</h4>
+                        <span>{{ worker.description }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- our-staffs-area-end -->
+{% endblock %}
