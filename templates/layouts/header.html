@@ -19,10 +19,11 @@
                                         href="{% url 'pages:about' %}">{% trans 'About'%}</a></li>
                                 <li class="{% if request.path == '/blog/' %}active{% endif %}"><a
                                         href="{% url 'pages:blog' %}">{% trans 'Blog'%}</a></li>
-                                <li class="{% if request.path == '/blog/' %}active{% endif %}"><a
-                                        href="https://muhammadyunus002.pythonanywhere.com/uz/">|   UZB</a></li>
-                                <li class="{% if request.path == '/blog/' %}active{% endif %}"><a
-                                        href="https://muhammadyunus002.pythonanywhere.com/en/">ENG</a></li>
+                                {% get_available_languages as all_lang %}
+                                {% for l in all_lang %}
+                                <li><a href="/{{ l.0 }}">
+                                    |{{ l.0|upper }}</a></li>
+                                {% endfor %}
                             </ul>
                         </nav>
                     </div>
